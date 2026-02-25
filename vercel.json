@@ -1,0 +1,28 @@
+{
+  "version": 2,
+  "functions": {
+    "api/**/*.js": {
+      "runtime": "nodejs20.x"
+    }
+  },
+  "crons": [
+    {
+      "path": "/api/weibo",
+      "schedule": "0 5 * * *"
+    },
+    {
+      "path": "/api/weibo",
+      "schedule": "0 6 * * *"
+    },
+    {
+      "path": "/api/weibo",
+      "schedule": "0 8 * * *"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/weibo",
+      "dest": "/api/weibo.js"
+    }
+  ]
+}
