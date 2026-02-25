@@ -1,10 +1,5 @@
 {
   "version": 2,
-  "functions": {
-    "api/**/*.js": {
-      "runtime": "edge"
-    }
-  },
   "crons": [
     {
       "path": "/api/weibo",
@@ -17,12 +12,6 @@
     {
       "path": "/api/weibo",
       "schedule": "0 8 * * *"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/api/weibo",
-      "dest": "/api/weibo.js"
     }
   ]
 }
